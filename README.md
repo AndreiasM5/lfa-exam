@@ -2,7 +2,7 @@
 
 Simulator de automat cu memorie și joc de aventură în terminal, realizate în Python pentru examenul la **Limbaje Formale și Automate (LFA)**, anul I, Facultatea de Matematică și Informatică, Universitatea din București.
 
-**Examen de 24 de ore · Nota 10**
+**Examen de 24 de ore**
 
 Acest repository păstrează lucrarea originală și o versiune revizuită pentru rulare și explorare. Nu conține enunțul examenului; explicațiile tehnice descriu implementarea disponibilă.
 
