@@ -1,0 +1,19 @@
+[Sigma]
+x
+y
+[Gamma]
+x
+y
+epsilon
+[State]
+q1, 0
+q2, 1
+q3, 1
+q4, 2
+[Delta]
+q1, x, epsilon, -> (q2, x, epsilon)
+q1, y, epsilon, -> (q3, y, epsilon)
+q2, x, x, -> (q2, x, x)
+q2, y, x, -> (q4, epsilon, epsilon)
+q3, y, y, -> (q3, y, y)
+q3, x, y, -> (q4, epsilon, epsilon)

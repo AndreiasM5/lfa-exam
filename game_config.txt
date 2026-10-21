@@ -1,0 +1,58 @@
+[Sigma]
+Entrance_Hall
+Dining_Room
+Kitchen
+Armoury
+Treasury
+Library
+Pantry
+Throne_Room
+Wizard’s_Study
+Secret_Exit
+epsilon
+[Gamma]
+key
+invitation
+chef's_hat
+spoon
+sword
+crown
+ancient_coin
+spell_book
+magic_wand
+epsilon
+[State]
+Entrance_Hall, 0
+Dining_Room, 1
+Kitchen, 1
+Armoury, 1
+Treasury, 1
+Library, 1
+Pantry, 1
+Throne_Room, 1
+Wizard’s_Study, 1
+Secret_Exit, 2
+[Delta]
+Entrance_Hall, Dining_Room, epsilon, -> (Dining_Room, epsilon, epsilon)
+Entrance_Hall, Armoury, key, -> (Armoury, epsilon, epsilon)
+Dining_Room, Entrance_Hall, invitation, -> (Entrance_Hall, epsilon, epsilon)
+Dining_Room, Treasury, sword, -> (Treasury, epsilon, epsilon)
+Dining_Room, Kitchen, chef's_hat, -> (Kitchen, epsilon, epsilon)
+Kitchen, Dining_Room, epsilon, -> (Dining_Room, epsilon, epsilon)
+Kitchen, Pantry, spoon, -> (Pantry, epsilon, epsilon)
+Pantry, Kitchen, chef's_hat, -> (Kitchen, epsilon, epsilon)
+Armoury, Entrance_Hall, invitation, -> (Entrance_Hall, epsilon, epsilon)
+Armoury, Treasury, sword, -> (Treasury, epsilon, epsilon)
+Armoury, Throne_Room, crown, -> (Throne_Room, epsilon, epsilon)
+Treasury, Armoury, key, -> (Armoury, epsilon, epsilon)
+Treasury, Dining_Room, epsilon, -> (Dining_Room, epsilon, epsilon)
+Treasury, Wizard’s_Study, spell_book, -> (Wizard’s_Study, epsilon, epsilon)
+Treasury, Library, ancient_coin, -> (Library, epsilon, epsilon)
+Library, Treasury, epsilon, -> (Treasury, epsilon, epsilon)
+Library, Secret_Exit, epsilon, -> (Secret_Exit, epsilon, epsilon)
+Throne_Room, Armoury, key, -> (Armoury, epsilon, epsilon)
+Throne_Room, Wizard’s_Study, spell_book, -> (Wizard’s_Study, epsilon, epsilon)
+Wizard’s_Study, Throne_Room, crown, -> (Throne_Room, epsilon, epsilon)
+Wizard’s_Study, Treasury, sword, -> (Treasury, epsilon, epsilon)
+Wizard’s_Study, Secret_Exit, magic_wand, -> (Secret_Exit, epsilon, epsilon)
+
