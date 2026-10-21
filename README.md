@@ -4,11 +4,26 @@ Simulator de automat cu memorie și joc de aventură în terminal, realizate în
 
 **Examen de 24 de ore**
 
+![Harta jocului](docs/game.png)
+
+## Varianta grafică minimală
+
+```bash
+python -m pip install -r requirements.txt
+python gui.py
+```
+
+Pe Windows: dublu click pe `run_gui.bat` (necesită Python instalat; prima pornire instalează Pygame într-un mediu local).
+
+Click pe cameră pentru deplasare; click pe obiectele din cameră pentru a le lua, iar pe cele din inventar pentru a le lăsa. Camera verde și punctul marchează poziția ta. `Restart` reia jocul; `Esc` închide fereastra. Liniile arată conexiunile, iar sensul permis și obiectele necesare sunt verificate de regulile existente din `Game.py`.
+
+Randarea, clickurile pentru luare/lăsare, accesul blocat, evadarea și restartul au fost verificate automat cu driverul video SDL dummy; captura de mai sus provine din aceeași interfață.
+
 Acest repository păstrează lucrarea originală și o versiune revizuită pentru rulare și explorare. Nu conține enunțul examenului; explicațiile tehnice descriu implementarea disponibilă.
 
 ## Pornire
 
-Necesită Python 3.10 sau mai nou. Nu sunt necesare biblioteci externe.
+Necesită Python 3.10 sau mai nou. Varianta în terminal nu necesită biblioteci externe; interfața grafică folosește Pygame.
 
 ```bash
 git clone https://github.com/AndreiasM5/lfa-exam.git
